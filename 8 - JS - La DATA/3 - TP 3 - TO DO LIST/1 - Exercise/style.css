@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 body {
     width: 100vw;
@@ -12,17 +13,35 @@ body {
 background: linear-gradient(324deg, rgba(238,226,222,1) 9%, rgba(179,19,18,1) 84%);
 }
 .todoContainer {
-    /* width: 500px; */
+    width: 450px;
     color: #2B2A4C;
     border-radius: 15px;
     background: #EEE2DE;
     padding: 10px;
 }
+h1 {
+    text-align: center;
+}
+.inputContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 input[type="text"] {
+    text-align: center;
     padding-left: 10px;
     color: whitesmoke;
     height: 40px;
     border-radius: 20px;
     background: rgb(238,226,222);
 background: linear-gradient(324deg, rgba(238,226,222,1) 9%, rgba(179,19,18,1) 84%);
+}
+.inputContainer::after {
+    position: absolute;
+    content: "";
+    color: red;
+    width: 35%;
+    height: 2px;
 }
