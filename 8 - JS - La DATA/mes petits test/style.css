@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background: rgb(159, 159, 159);
+    max-width: 500px;
+    margin: auto;    
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.boiteAouts {
+    border: 5px solid rgb(66, 32, 203);
+    margin: 10px 5px;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.boiteAouts:hover {
+    border: 5px solid rgb(188,23,42);
+    border-radius: 2px;
+    background: rgb(74, 74, 74);
+}
+.logoContainer img {
+    width: 70px;
+    padding: 15px 0px;
+}
+.modelSelect {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label {
+    border: 2px solid rgb(235,209,26) ;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    transform: scale(1.3);
+    filter: brightness(150%);
+    transition: 0.3s;
+  }
+label {
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    background: grey;
+}
+.dataContainer {
+    text-align: center;
+    min-width: 400px;
+    margin-top: 50px;
+}
+.submit {
+    text-align: center;
+    min-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.btnCalc {
+    height: 60px;
+    width: 200px;
+    color: rgb(235,209,26);
+    border-radius: 20px;
+background: #4a4a4a;
+box-shadow:  22px 22px 45px #2d2d2d,
+             -22px -22px 45px #676767;
+}
+input[type="number"] {
+    width: 60%;
+}

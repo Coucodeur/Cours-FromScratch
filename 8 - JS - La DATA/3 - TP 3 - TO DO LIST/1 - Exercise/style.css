@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(238,226,222);
+background: linear-gradient(324deg, rgba(238,226,222,1) 9%, rgba(179,19,18,1) 84%);
+}
+.todoContainer {
+    /* width: 500px; */
+    color: #2B2A4C;
+    border-radius: 15px;
+    background: #EEE2DE;
+    padding: 10px;
+}
+input[type="text"] {
+    padding-left: 10px;
+    color: whitesmoke;
+    height: 40px;
+    border-radius: 20px;
+    background: rgb(238,226,222);
+background: linear-gradient(324deg, rgba(238,226,222,1) 9%, rgba(179,19,18,1) 84%);
+}

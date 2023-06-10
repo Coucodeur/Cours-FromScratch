@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes petits test</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- Test de l'input range -->
+    <div class="boiteAouts" id="rangeTest">
+        <h1>Ceci est un test de range</h1>
+        <input type="range" name="range" id="volumeRange" min="0" max="20" step="0.5" value="10" oninput="document.getElementById('rangeDisplay').value=this.value">
+        <input type="text" name="" id="rangeDisplay" readonly value="10">
+    </div>
+
+    <!-- Calculatrice de PA Hacker -->
+    <div class="boiteAouts" id="calculPa">
+        <h1>Test de calculatrice PA</h1>
+        <div class="logoContainer">
+            <img src="./logo_ai_HD.png" alt="logoAi">
+        </div>
+        <div class="modelSelect">
+            <input type="radio" name="gamme" id="LASER" radio>
+            <label for="LASER">LASER</label>
+            <input type="radio" name="gamme" id="AUTRE" radio>
+            <label for="AUTRE">AUTRE</label>
+        </div>
+        <div class="dataContainer">
+            <input type="number" name="pa" id="pa" placeholder="PA Hacker">
+        </div>
+        <div class="submit">
+            <button type="submit" class="btnCalc" >CALCULER</button>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

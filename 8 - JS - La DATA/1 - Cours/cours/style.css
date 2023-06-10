@@ -1,0 +1,28 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#php {
+    background: blue;
+    height: 50px;
+}
+#python {
+    background: purple;
+    height: 50px;
+}
+#javascript {
+    background: yellow;
+    height: 50px;
+}
