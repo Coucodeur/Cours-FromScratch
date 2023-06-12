@@ -31,7 +31,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 35px;
+    padding-top: 15px;
 }
 input[type="text"] {
     text-align: center;
@@ -48,4 +48,12 @@ background: linear-gradient(324deg, rgba(238,226,222,1) 9%, rgba(179,19,18,1) 84
     color: red;
     width: 35%;
     height: 2px;
+}
+.listContainer {
+    margin-top: 45px;
+}
+ul {
+    padding: 15px;
+    position: relative;
+    left: 50px   
 }
