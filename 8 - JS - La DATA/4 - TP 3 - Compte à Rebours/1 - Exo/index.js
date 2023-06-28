@@ -9,45 +9,67 @@
 
 // Créer un événement à la validation du form pour lancer le compte à rebours
   
-// const start = document.getElementById("start");
+
+
+//------------ Block de départ -------
 // const countdownDisplay = document.getElementById('countdownDisplay')
+// const start = document.getElementById("start");
 // start.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   let totalSeconds = choice.value * 60;
-//   let minutes = Math.floor(totalSeconds / 60);
-//   let seconds = totalSeconds % 60;
-//   let chrono = [minutes + " : " + seconds];
-//   if (seconds = 0) {
-//     minutes --
-//     seconds = 59
-//   }
-// });
+  //     e.preventDefault();
+  //     let totalSeconds = choice.value * 60;
+  //     let minutes = Math.floor(totalSeconds / 60);
+  //     let seconds = totalSeconds % 60;
+  //     let chrono = ["Temps restant : " + minutes + " : " + seconds];
+  //     console.log(totalSeconds, minutes, seconds, chrono);
+  //   }
+  //   );
+  
+  // let chrono = 0  
+  // countdownDisplay.textContent = chrono
+  
+  // const chronoChange = () => {
+    //   chrono = 34
+    // }
+    // chronoChange()
+    //------------ Block de départ -------
+    
+// -----------Test compte secondes--------
+console.log('ici on vient tester le compte à rebours des secondes');
+const countdownDisplay = document.getElementById('countdownDisplay');
+const chrono = document.createElement('span');
+const body = document.querySelector('body')
+countdownDisplay.appendChild(chrono)
+
 let seconds = 10
-  countdownDisplay.textContent = seconds
+console.log(seconds);
 
-const secondsEnMoins = () => {
-  if (seconds >= 1) {
-    setInterval(() => {
-      seconds --;
-      countdownDisplay.textContent = seconds;
-    }, 1000)  
-  }
-  }
-// secondsEnMoins();
+const moinsSeconds = () => {
+  seconds --,
+  console.log(seconds);
+}
 
-const secondsEnMoins2 = () => {
-    if (seconds > 0) {
-      setInterval(() => {
-        seconds --;
-        countdownDisplay.textContent = seconds;
-      }, 1000);
-    } 
-    if (seconds = 0) {
-      seconds = 59;
-    }
-  }
-secondsEnMoins2()
 
-// il vaudrait mieux utiliser setTimeout() plutot
-// que setInterval() et rappeler la fonction de --
-// dans cette meme boucle
+
+const plusSeconds = () => {
+  seconds ++;
+  console.log(seconds);
+}
+// body.addEventListener('click', ()=> {
+//  if (seconds > 1) {
+//   moinsSeconds();
+//   console.log("cliké");
+// } else {
+//   alert('vous etes à zéro!')
+// } 
+// })
+body.addEventListener('click', ()=> {
+  setInterval((i) => {
+    if (seconds > 1) {
+     moinsSeconds();
+     console.log("cliké");
+   } else {
+     alert('vous etes à zéro!'),
+    clearInterval(i)
+   } 
+   },1000)
+},)

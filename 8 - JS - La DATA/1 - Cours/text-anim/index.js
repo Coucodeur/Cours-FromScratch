@@ -31,4 +31,5 @@ const loop = () => {
     }
   }, 70);
 };
-loop();
+// loop();
+createLetter()
