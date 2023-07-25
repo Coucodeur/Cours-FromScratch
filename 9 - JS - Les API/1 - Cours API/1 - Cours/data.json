@@ -1,0 +1,14 @@
+{
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "editor.wordWrap": "on",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "window.zoomLevel": 1
+  }
+  
